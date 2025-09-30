@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FST - Portail Invité AG</title>
+    <link rel="stylesheet" href="css/invite-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- <h1>Portail Invité</h1>
+            <p>Assemblée Générale FST</p> -->
+        </header>
+        
+        <div class="card">
+            <div class="welcome-section">
+                <div class="header-row">
+                    <img src="css/images/logo.png" alt="Logo" class="section-logo">
+                    <h2>Assemblée Générale</h2>
+                </div>
+                <div class="note-row">
+                    <p>Note : Utiliser la même adresse email que celle utilisée en remplissant le formulaire.</p>
+                </div>
+            </div>
+            
+            <form id="invite-form" class="form">
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" required placeholder="votre.email@example.com">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Générer le QR Code</button>
+            </form>
+            
+            <div id="qr-result" class="qr-container" style="display: none;">
+                <h3>QR Code de participation</h3>
+                <div id="qr-code"></div>
+                <p class="instruction">Présentez ce QR code lors du check-in</p>
+                <button id="download-qr" class="btn btn-secondary">Télécharger</button>
+            </div>
+            
+            <div id="error-message" class="error-message" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="js/invite.js"></script>
+</body>
+</html>

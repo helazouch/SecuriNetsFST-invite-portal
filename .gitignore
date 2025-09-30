@@ -1,0 +1,20 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers temporaires
+node_modules/
+.vscode/
+.idea/
+
+# Fichiers de log
+*.log
+
+# Fichiers de sauvegarde
+*.bak
+*.tmp
+*~
+
+# Environnement
+.env
+.env.local
